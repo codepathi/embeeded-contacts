@@ -1,0 +1,70 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.welcome{
+    width: 80%;
+    margin: auto;
+    height: 70vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    width: 60%;
+}
+
+.featureList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 15px 25px;
+    width: 100%;
+}
+
+.magicImage{
+    width: 90%;
+    float: right;
+}
+
+.createBtn{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(76, 0, 255), rgb(0, 217, 255));
+    border: none;
+    padding: 12px 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgb(225, 225, 225);
+    animation-name: createBtnAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.createBtn:hover{
+    animation-name: none;
+}
+
+@keyframes createBtnAnimation {
+    0% {margin-left: 0px;}
+    5% {margin-left: -20px;}
+    7% {margin-left: 50px;}
+    9% {margin-left: 0px;}
+    100% {margin-left: 0px;}
+}
+
+.learnMore{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(193, 246, 255), rgb(201, 179, 255));
+    border: none;
+    padding: 12px 20px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgb(225, 225, 225);
+    margin-top: 15px;
+}

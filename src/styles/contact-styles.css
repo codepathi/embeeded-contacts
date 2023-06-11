@@ -1,0 +1,325 @@
+/* For whatsapp and general styling  */
+
+.fixedChat .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fixedChat .container .excludeOpener{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.3px rgb(243, 243, 243) solid;
+    border-radius: 15px;
+    margin-right: 85px;
+    margin-bottom: -45px;
+    width: 220px;
+    text-align: center;
+    gap: 10px;
+    animation: excludeOpenerAnimation 0.4s ease-in-out;
+    background-color: white;
+}
+
+@keyframes excludeOpenerAnimation {
+    from {margin-left: 50px;}
+    to {margin-left: 0px;}
+  }
+
+.fixedChat .container .close{
+    display: none;
+}
+
+.closer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 80px;
+    background-color: #00B337;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    padding-left: 30px;
+    
+}
+
+.textAndCloser{
+    font-size: 18px;
+}
+
+.closeText{
+    font-size: 10px;
+    color: rgb(231, 231, 231);
+}
+
+.qrSvg{
+    width: 18px;
+}
+
+.instruction{
+    width: 80%;
+    z-index: 20;
+}
+
+.instruction p{
+
+    font-size: 12px;
+}
+
+.openerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+.fixedChat .container .opener:hover:before{
+    content: "Whatsapp";
+    font-size: 14px;
+    background-color: rgb(57, 57, 57);
+    height: 32px;
+    padding: 5px 15px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+/* .fixedChat .container .chatWithUsAnimation::before{
+    animation: chatWithUs 6s infinite;
+}
+
+@keyframes chatWithUs {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    35% {opacity: 1;}
+    60% {opacity: 1;}
+    62% {opacity: 0;}
+    100% {opacity: 0;}
+  } */
+
+
+.whatsappLogo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px;
+}
+
+.whatsappLogo:hover{
+    padding: 5px;
+}
+
+
+.closeWhatsapp{
+    display: none;
+}
+
+
+.openWhatsAppAnimation{
+    animation: openWhatsAppAnimation 0.1s ease-in-out;
+}
+
+@keyframes openWhatsAppAnimation {
+    0% {margin-bottom: -15px;}
+    100% {margin-bottom: 0px;}
+  }
+
+
+
+/* For viber  */
+
+.fixedChat .container .excludeOpenerViber{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    border: 0.3px rgb(243, 243, 243) solid;
+    align-items: center;
+    border-radius: 15px;
+    margin-right: 45px;
+    margin-bottom: -50px;
+    width: 220px;
+    text-align: center;
+    gap: 10px;
+    animation: excludeOpenerAnimation 0.4s ease-in-out;
+    z-index: 2002;
+}
+
+.fixedChat .container .closeViber{
+    display: none;
+}
+
+.closerViber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 80px;
+    background-color: #0695FF;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    padding-left: 25px;
+}
+
+.fixedChat .container .openerViber:hover:before{
+    content: "Messenger";
+    font-size: 14px;
+    background-color: rgb(57, 57, 57);
+    height: 32px;
+    padding: 5px 15px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+
+/* For opening message  */
+
+.openerLogo{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    animation: openerMessageAnimate2 0.2s ease-in-out;
+}
+@keyframes openerMessageAnimate2 {
+    0% {transform: rotate(-220deg);}
+    100% {transform: rotate(-360deg);}
+  }
+.openLogoOpen:hover{
+    padding: 26px;
+    background-image: url("../../public/images/send5.svg");
+    background-size: cover;
+    animation: openerMessageAnimate 0.2s ease-in-out;
+}
+
+
+@keyframes openerMessageAnimate {
+    0% {transform: rotate(220deg);}
+    100% {transform: rotate(360deg);}
+  }
+/* 
+.openerLogoAnimation{
+    animation: openerLogoAnimation 6s ease-in-out infinite;
+}
+
+@keyframes openerLogoAnimation {
+    0% {margin-right: -10px;}
+    2.5% {margin-right: 15px;}
+    7.5% {margin-right: -5px;}
+    12.5% {margin-right: 0px;}
+    100% {margin-right: 0px;}
+  } */
+
+.fixedChat .container .openerMessage{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.chatWithUs{
+    background-color: white;
+    height: 40px;
+    padding: 0px 13px;
+    margin-top: 8px;
+    border: 0.3px rgb(243, 243, 243) solid;
+    border-radius: 15px;
+    margin-right: 9px;
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 400;
+}
+
+.chatWithUs .wave{
+    font-size: 23px;
+}
+
+
+
+/* For phone  */
+.fixedChat .container .openerPhone:hover:before{
+    content: "Phone";
+    font-size: 14px;
+    background-color: rgb(57, 57, 57);
+    height: 32px;
+    padding: 5px 15px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+/* For email  */
+
+.excludeOpenerEmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    margin-right: 50px;
+    border: 0.3px rgb(243, 243, 243) solid;
+    margin-bottom: -45px;
+    width: 250px;
+    text-align: left;
+    gap: 10px;
+    animation: excludeOpenerAnimation 0.4s ease-in-out;
+    background-color: white;
+}
+.excludeOpenerEmail .closerViber{
+    background-color: #2633AE;
+    height: 70px;
+    color: white;
+    padding-left: 25px;
+    border-radius: 25px 25px 0 0;
+}
+.excludeOpenerEmail .instruction{
+    width: 80%;
+    z-index: 20;
+    padding-left: 30px;
+}
+.excludeOpenerEmail .instruction p{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(44, 44, 44);
+    font-weight: 400;
+}
+.excludeOpenerEmail .instruction p span{
+    font-size: 12px;
+}
+
+
+.fixedChat .container .openerEmail:hover:before{
+    content: "Send email to restroX";
+    font-size: 14px;
+    background-color: rgb(57, 57, 57);
+    height: 32px;
+    padding: 5px 15px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+  /* Responsive  */
+
+  @media only screen and (max-width: 600px) {
+    .whatsappLogo{
+        width: 50px;
+        height: 50px;
+    }
+    .openerLogo{
+        width: 62px;
+        height: 62px;
+    }
+  }
+
+  /* For overlay  */
+  .hideOverlay{
+    display: none;
+  }

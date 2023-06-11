@@ -1,0 +1,21 @@
+nav{
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 8px rgb(225, 225, 225);
+    /* background-color: white; */
+    padding: 20px 0;
+}
+
+.navContainer{
+ display: flex;   
+ justify-content: space-around;
+ align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    list-style: none;
+    gap: 70px;
+}

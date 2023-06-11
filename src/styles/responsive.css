@@ -1,0 +1,36 @@
+@media only screen and (max-width: 600px) {
+
+    /* Navbar  */
+    nav{
+        padding: 10px;
+    }
+    .navLinks{
+        gap: 20px;
+        font: 12px;
+    }
+
+    .hideInMobile{
+        display: none;
+    }
+
+    /* Home  */
+    .welcome{
+        margin: 70px auto;
+        height: auto;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .magicImage{
+        display: none;
+    }
+
+    /* Form  */
+    .form{
+        width: 80%;
+        margin-bottom: 100px;
+        height: auto;
+    }
+  }

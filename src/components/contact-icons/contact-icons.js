@@ -2,8 +2,11 @@ import { useEffect } from "react";
 import { useState } from "react";
 import QRCode from "react-qr-code";
 
-const Contact = ({chatInfo}) => {
+const Contact = ({ chatData }) => {
 
+    const [chatInfo, setChatInfo] = useState(chatData);
+
+    
     const [closeClass, setCloseClass] = useState(false) 
     const [closeClassViber, setCloseClassViber] = useState(false)
     const [closeClassEmail, setCloseClassEmail] = useState(false)
@@ -67,8 +70,6 @@ const Contact = ({chatInfo}) => {
             setGap(50)
         }
     }, [])
-
-    console.log(chatInfo);
 
     return ( 
         <>
@@ -203,7 +204,6 @@ const Contact = ({chatInfo}) => {
             <div className="openerContainer">
                 <div className='openerPhone' onClick={openPopupPhone}>
                 <img className= "whatsappLogo" src='/images/phone.png' alt="restrox phone contact" />
-                    {/* <a href={isNepal ? "tel:+9779802853939" : "tel:+17372964362"}><img className= "whatsappLogo" src='/images/phone.png' alt="restrox phone contact" /></a> */}
                     </div>
             </div>
             </div>

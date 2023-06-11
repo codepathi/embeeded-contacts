@@ -4,12 +4,19 @@ import Form from "../components/form/form";
 import Navbar from "../components/navbar/Navbar";
 
 const Landing = () => {
+    const chatData = {
+        name: "adf",
+        whatsApp: 98123434,
+        messenger: "asdfasd",
+        email: "asdfasdf",
+        contactNo: 12,
+    }
     return ( 
     <>
     <Navbar/>
     <Home/>
     <Form/>
-    <Contact/>
+    <Contact chatData={chatData}/>
     </> );
 }
  

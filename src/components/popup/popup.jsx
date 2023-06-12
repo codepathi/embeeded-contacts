@@ -29,7 +29,7 @@ function Popup(props) {
       <Modal.Body>
         <p><b>Copy and paste link in index.html file.</b></p>
         <p>
-          {props.iconId}
+          {props.iconId ? <>{props.iconId}</> : (<>Loading, please wait...</>)}
         {readyLink}
         </p>
         {

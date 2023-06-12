@@ -22,6 +22,7 @@ const Form = () => {
         e.preventDefault();
         const linkData = postData({formData});
         setIconId(linkData);
+        setModalShow(true); 
     }
 
     const [modalShow, setModalShow] = useState(false);
@@ -39,14 +40,14 @@ const Form = () => {
         <input type="text" name="messenger" required onChange={handleChange}/>
         <label htmlFor="whatsapp">Whatsapp</label>
         <input type="text" name="whatsApp" required onChange={handleChange}/>
-        <button onClick={(e)=>{setModalShow(true); handleSubmit(e);}} type="submit" className="learnMore">Create</button>
+        <button onClick={(e)=>{handleSubmit(e)}} type="submit" className="learnMore">Create</button>
 
         </form>
         
         </div>
         <Popup show={modalShow}
         onHide={() => setModalShow(false)}
-        iconId = {iconId}
+        iconId = {iconId ? iconId : "Loading"}
         />
         </>
      );

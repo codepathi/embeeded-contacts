@@ -81,7 +81,7 @@ const Contact = ({ chatData }) => {
         </div>
 
         {/* Message box opener  */}
-        <div className="fixedChat" style={{position: "fixed", "bottom" : `40px`, "right": "22px", zIndex: "2000"}}>
+        <div className="fixedChat" style={{position: "fixed", "bottom" : `40px`, "right": "22px", zIndex: "2147483647"}}>
             <div className="container">
                 {/* Do not animate close button  */}
                 <div className={openMessagePopup ? 'openerMessage' : 'openerMessage chatWithUsAnimation'} >

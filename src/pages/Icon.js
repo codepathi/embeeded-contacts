@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Contact from "../components/contact-icons/contact-icons";
 import useGetLinkDataById from "../hooks/useGetLinkDataById";
 const Icon = () => {

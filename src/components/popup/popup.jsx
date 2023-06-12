@@ -3,9 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function Popup(props) {
-    const [readyLink, setReadyLink] = useState(`<script
-    src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-    crossorigin></script>`)
+    const [readyLink, setReadyLink] = useState(`<embed type="image/jpg" src="https://embeeded-contact.netlify.app/contact/${props.iconId}" width="300" height="200">`)
 
     const [copied, setCopied] = useState(false);
 
@@ -29,7 +27,6 @@ function Popup(props) {
       <Modal.Body>
         <p><b>Copy and paste link in index.html file.</b></p>
         <p>
-          {props.iconId ? <>{props.iconId}</> : (<>Loading, please wait...</>)}
         {readyLink}
         </p>
         {
